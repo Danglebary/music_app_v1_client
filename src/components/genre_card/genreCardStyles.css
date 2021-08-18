@@ -1,0 +1,22 @@
+.genre_card_container {
+    display: block;
+    position: relative;
+    width: 164px;
+    height: 112px;
+    border-radius: 8px;
+    text-align: left;
+}
+.genre_card_background {
+    display: block;
+    width: 164px;
+    height: 112px;
+    border-radius: 8px;
+}
+.genre_card_title {
+    position: absolute;
+    left: 15px;
+    bottom: 10px;
+    color: white;
+    font-weight: 400;
+    font-size: 13px;
+}
