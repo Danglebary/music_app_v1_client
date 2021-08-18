@@ -1,0 +1,33 @@
+.now_playing_bar_container {
+    position: fixed;
+    width: 100vw;
+    height: 3.6em;
+    bottom: 4.75em;
+    padding-left: 1.25em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgba(58, 54, 60, 0.6);
+    backdrop-filter: blur(22px);
+    border-bottom: 1px solid rgba(155, 155, 155, 0.4);
+}
+
+.now_playing_bar_icon_container {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    width: 2.5em;
+    justify-content: space-between;
+    font-size: 22px;
+    letter-spacing: -4px;
+    right: 1.25em;
+}
+.now_playing_bar_cover_art {
+    width: 44px;
+    height: 44px;
+}
+.now_playing_bar_track_title {
+    margin-left: 1em;
+    font-size: 16px;
+    font-weight: 400;
+}
