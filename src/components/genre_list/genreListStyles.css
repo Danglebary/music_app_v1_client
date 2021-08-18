@@ -1,0 +1,21 @@
+.genre_list_container {
+    width: 100vw;
+    height: 80vh;
+    padding: 0 1.25em;
+    padding-bottom: 10em;
+}
+
+.genre_list_items_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-flow: row;
+    column-gap: 0.5em;
+    row-gap: 0.5em;
+}
+.genre_list_categories_label {
+    padding-bottom: 0.25em;
+}
+.genre_list_empty {
+    margin-top: 10px;
+    height: 150px;
+}
