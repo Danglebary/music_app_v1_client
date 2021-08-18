@@ -1,0 +1,23 @@
+.nav_bar_container {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100vw;
+    height: 4.75em;
+    bottom: 0;
+    background-color: rgba(58, 54, 60, 0.6);
+    backdrop-filter: blur(22px);
+}
+.nav_button_container {
+    padding-top: 0.32em;
+}
+.nav_button_container div {
+    font-size: 20px;
+    text-align: center;
+}
+.nav_button_container p {
+    font-size: 12px;
+    text-align: center;
+    color: rgb(155, 155, 155);
+}
