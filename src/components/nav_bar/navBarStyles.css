@@ -12,12 +12,29 @@
 .nav_button_container {
     padding-top: 0.32em;
 }
-.nav_button_container div {
-    font-size: 20px;
-    text-align: center;
-}
-.nav_button_container p {
-    font-size: 12px;
+.nav_button_container {
+    width: 5.5em;
+    font-size: 11px;
     text-align: center;
     color: rgb(155, 155, 155);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.icon {
+    fill: rgb(155, 155, 155);
+    width: 26px;
+    height: 26px;
+}
+.nav_radio_button_icon {
+    width: 32px;
+    height: 32px;
+    margin-top: -2px;
+}
+.nav_radio_button p {
+    margin-top: -2px;
+}
+.nav_search_button_icon {
+    fill: rgb(255, 0, 43);
 }

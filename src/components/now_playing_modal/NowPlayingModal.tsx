@@ -1,6 +1,6 @@
 import React, { ReactElement, useState } from 'react';
 
-import { pic_3 } from '../../helper_functions/img_imports';
+import { genre_list_item_3 } from '../../helper_functions/img_imports';
 import './nowPlayingModalStyles.css';
 
 interface Props {
@@ -29,7 +29,7 @@ export default function NowPlayingModal({ setModalOpen }: Props): ReactElement {
             </div>
             <img
                 className="cover_art"
-                src={pic_3}
+                src={genre_list_item_3}
                 alt="cover art for currently playing track"
             />
             <div className="modal_info_container">

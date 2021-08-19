@@ -4,35 +4,35 @@ import GenreCard from '../genre_card/GenreCard';
 import './genreListStyles.css';
 
 import {
-    pic_1,
-    pic_2,
-    pic_3,
-    pic_4,
-    pic_5
+    genre_list_item_1,
+    genre_list_item_2,
+    genre_list_item_3,
+    genre_list_item_4,
+    genre_list_item_5
 } from '../../helper_functions/img_imports';
 
 interface Props {}
 
 export default function GenreList({}: Props): ReactElement {
     const genre_list: string[][] = [
-        ['Hip-Hop', pic_1],
-        ['Pop', pic_2],
-        ['Rap', pic_3],
-        ['R&B', pic_4],
-        ['Trap', pic_2],
-        ['Alternative', pic_5],
-        ['Hip-Hop', pic_1],
-        ['Pop', pic_2],
-        ['Rap', pic_3],
-        ['R&B', pic_4],
-        ['Trap', pic_2],
-        ['Alternative', pic_5],
-        ['Hip-Hop', pic_1],
-        ['Pop', pic_2],
-        ['Rap', pic_3],
-        ['R&B', pic_4],
-        ['Trap', pic_2],
-        ['Alternative', pic_5]
+        ['Hip-Hop', genre_list_item_1],
+        ['Pop', genre_list_item_2],
+        ['Rap', genre_list_item_3],
+        ['R&B', genre_list_item_4],
+        ['Trap', genre_list_item_2],
+        ['Alternative', genre_list_item_5],
+        ['Hip-Hop', genre_list_item_1],
+        ['Pop', genre_list_item_2],
+        ['Rap', genre_list_item_3],
+        ['R&B', genre_list_item_4],
+        ['Trap', genre_list_item_2],
+        ['Alternative', genre_list_item_5],
+        ['Hip-Hop', genre_list_item_1],
+        ['Pop', genre_list_item_2],
+        ['Rap', genre_list_item_3],
+        ['R&B', genre_list_item_4],
+        ['Trap', genre_list_item_2],
+        ['Alternative', genre_list_item_5]
     ];
 
     return (

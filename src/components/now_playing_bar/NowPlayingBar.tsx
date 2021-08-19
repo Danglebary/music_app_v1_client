@@ -1,7 +1,7 @@
 import React, { ReactElement, useState } from 'react';
 import NowPlayingModal from '../now_playing_modal/NowPlayingModal';
 
-import { pic_3 } from '../../helper_functions/img_imports';
+import { genre_list_item_3 } from '../../helper_functions/img_imports';
 
 import './nowPlayingBarStyles.css';
 
@@ -22,7 +22,7 @@ export default function NowPlayingBar({}: Props): ReactElement {
         <div className="now_playing_bar_container" onClick={toggleModal}>
             <img
                 className="now_playing_bar_cover_art"
-                src={pic_3}
+                src={genre_list_item_3}
                 alt="cover art for currently playing song"
             />
             <h3 className="now_playing_bar_track_title">Drip Too Hard</h3>
