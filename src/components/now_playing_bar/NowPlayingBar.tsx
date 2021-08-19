@@ -1,4 +1,5 @@
-import React, { ReactElement } from 'react';
+import React, { ReactElement, useState } from 'react';
+import NowPlayingModal from '../now_playing_modal/NowPlayingModal';
 
 import { pic_3 } from '../../helper_functions/img_imports';
 
@@ -7,8 +8,18 @@ import './nowPlayingBarStyles.css';
 interface Props {}
 
 export default function NowPlayingBar({}: Props): ReactElement {
-    return (
-        <div className="now_playing_bar_container">
+    const [modalOpen, setModalOpen] = useState(false);
+
+    const toggleModal = () => {
+        if (modalOpen == true) {
+            setModalOpen(false);
+        } else {
+            setModalOpen(true);
+        }
+    };
+
+    let normalLayout = (
+        <div className="now_playing_bar_container" onClick={toggleModal}>
             <img
                 className="now_playing_bar_cover_art"
                 src={pic_3}
@@ -19,6 +30,16 @@ export default function NowPlayingBar({}: Props): ReactElement {
                 <div className="now_playing_bar_play_icon">▶️</div>
                 <div className="now_playing_bar_next_icon">▶️▶️</div>
             </div>
+        </div>
+    );
+
+    return (
+        <div>
+            {modalOpen ? (
+                <NowPlayingModal setModalOpen={setModalOpen} />
+            ) : (
+                normalLayout
+            )}
         </div>
     );
 }
