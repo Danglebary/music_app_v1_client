@@ -11,7 +11,7 @@ export default function NowPlayingBar({}: Props): ReactElement {
     const [modalOpen, setModalOpen] = useState(false);
 
     const toggleModal = () => {
-        if (modalOpen == true) {
+        if (modalOpen === true) {
             setModalOpen(false);
         } else {
             setModalOpen(true);
