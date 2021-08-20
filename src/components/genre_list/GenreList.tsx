@@ -1,4 +1,4 @@
-import React, { ReactElement } from 'react';
+import { ReactElement } from 'react';
 import GenreCard from '../genre_card/GenreCard';
 
 import './genreListStyles.css';
