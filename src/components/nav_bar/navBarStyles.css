@@ -35,6 +35,9 @@
 .nav_radio_button p {
     margin-top: -2px;
 }
-.nav_search_button_icon {
-    fill: rgb(255, 0, 43);
+.active_nav_icon {
+    fill: #e5434e;
+}
+.active_nav_title {
+    color: #e5434e;
 }
