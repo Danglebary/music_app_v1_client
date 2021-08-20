@@ -11,28 +11,17 @@ import {
     genre_list_item_5
 } from '../../helper_functions/img_imports';
 
+import genre_list from '../../helper_functions/genre_list_config';
+
 interface Props {}
 
 export default function GenreList({}: Props): ReactElement {
-    const genre_list: string[][] = [
-        ['Hip-Hop', genre_list_item_1],
-        ['Pop', genre_list_item_2],
-        ['Rap', genre_list_item_3],
-        ['R&B', genre_list_item_4],
-        ['Trap', genre_list_item_2],
-        ['Alternative', genre_list_item_5],
-        ['Hip-Hop', genre_list_item_1],
-        ['Pop', genre_list_item_2],
-        ['Rap', genre_list_item_3],
-        ['R&B', genre_list_item_4],
-        ['Trap', genre_list_item_2],
-        ['Alternative', genre_list_item_5],
-        ['Hip-Hop', genre_list_item_1],
-        ['Pop', genre_list_item_2],
-        ['Rap', genre_list_item_3],
-        ['R&B', genre_list_item_4],
-        ['Trap', genre_list_item_2],
-        ['Alternative', genre_list_item_5]
+    const genre_bg_imgs = [
+        genre_list_item_1,
+        genre_list_item_2,
+        genre_list_item_3,
+        genre_list_item_4,
+        genre_list_item_5
     ];
 
     return (
@@ -42,7 +31,16 @@ export default function GenreList({}: Props): ReactElement {
                 {genre_list.map((genre, i) => {
                     return (
                         <div className="genre_list_item" key={i}>
-                            <GenreCard title={genre[0]} image={genre[1]} />
+                            <GenreCard
+                                title={genre}
+                                image={
+                                    genre_bg_imgs[
+                                        Math.floor(
+                                            Math.random() * genre_bg_imgs.length
+                                        )
+                                    ]
+                                }
+                            />
                         </div>
                     );
                 })}
