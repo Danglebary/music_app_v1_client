@@ -3,11 +3,11 @@ import { ReactElement } from 'react';
 import './navBarStyles.css';
 
 import {
-    Nav_library_button,
-    Nav_listen_now_button,
-    Nav_radio_button,
-    Nav_browse_button,
-    Search_button_icon
+    NavLibraryIcon,
+    NavListenNowIcon,
+    NavRadioIcon,
+    NavBrowseIcon,
+    SearchButtonIcon
 } from '../../helper_functions/img_imports';
 
 interface Props {
@@ -22,7 +22,7 @@ export default function NavBar({ currentPage, setPage }: Props): ReactElement {
                 className="nav_button_container nav_listen_now_button"
                 onClick={() => setPage('listen_now')}
             >
-                <Nav_listen_now_button
+                <NavListenNowIcon
                     className={
                         currentPage === 'listen_now'
                             ? 'nav_listen_now_button_icon icon active_nav_icon'
@@ -43,7 +43,7 @@ export default function NavBar({ currentPage, setPage }: Props): ReactElement {
                 className="nav_button_container nav_browse_button"
                 onClick={() => setPage('browse')}
             >
-                <Nav_browse_button
+                <NavBrowseIcon
                     className={
                         currentPage === 'browse'
                             ? 'nav_browse_button_icon icon active_nav_icon'
@@ -64,7 +64,7 @@ export default function NavBar({ currentPage, setPage }: Props): ReactElement {
                 className="nav_button_container nav_radio_button"
                 onClick={() => setPage('radio')}
             >
-                <Nav_radio_button
+                <NavRadioIcon
                     className={
                         currentPage === 'radio'
                             ? 'nav_radio_button_icon icon active_nav_icon'
@@ -86,7 +86,7 @@ export default function NavBar({ currentPage, setPage }: Props): ReactElement {
                 onClick={() => setPage('library')}
             >
                 <div className="nav_library_icon_container">
-                    <Nav_library_button
+                    <NavLibraryIcon
                         className={
                             currentPage === 'library'
                                 ? 'nav_library_button_icon icon active_nav_icon'
@@ -109,7 +109,7 @@ export default function NavBar({ currentPage, setPage }: Props): ReactElement {
                 onClick={() => setPage('search')}
             >
                 <div className="nav_search_icon_container">
-                    <Search_button_icon
+                    <SearchButtonIcon
                         className={
                             currentPage === 'search'
                                 ? 'nav_search_button_icon icon active_nav_icon'
