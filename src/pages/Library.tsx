@@ -7,8 +7,8 @@ interface Props {}
 export default function Library({}: Props): ReactElement {
     return (
         <div className="library_page_container">
-            <div className="header_container">
-                <h3 className="library_page_title">Library</h3>
+            <div className="page_header_container">
+                <h3 className="page_header_title">Library</h3>
             </div>
             <div className="library_page_main_content_container">
                 <div className="placeholder_text_container">
