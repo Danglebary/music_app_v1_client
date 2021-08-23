@@ -12,7 +12,7 @@ const useFetch = (query: string) => {
             const response = await fetch(query);
             const data = await response.json();
             setData(data);
-            setStatus('Fetched');
+            setStatus('fetched');
         };
 
         fetchData();
