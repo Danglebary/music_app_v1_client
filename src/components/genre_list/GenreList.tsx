@@ -1,4 +1,4 @@
-import { ReactElement, useEffect, useState } from 'react';
+import { ReactElement } from 'react';
 import GenreCard from '../genre_card/GenreCard';
 
 import './genreListStyles.css';
@@ -32,25 +32,29 @@ export default function GenreList({}: Props): ReactElement {
         <div className="genre_list_container">
             <h3 className="genre_list_categories_label">Browse Categories</h3>
             <div className="genre_list_items_container">
-                {genresList !== null && genresList !== undefined
-                    ? genresList.map((genre, i) => {
-                          return (
-                              <div className="genre_list_item" key={i}>
-                                  <GenreCard
-                                      title={genre}
-                                      image={
-                                          genre_bg_imgs[
-                                              Math.floor(
-                                                  Math.random() *
-                                                      genre_bg_imgs.length
-                                              )
-                                          ]
-                                      }
-                                  />
-                              </div>
-                          );
-                      })
-                    : null}
+                {status !== 'fetched' ? null : (
+                    <>
+                        {genresList !== null && genresList !== undefined
+                            ? genresList.map((genre, i) => {
+                                  return (
+                                      <div className="genre_list_item" key={i}>
+                                          <GenreCard
+                                              title={genre}
+                                              image={
+                                                  genre_bg_imgs[
+                                                      Math.floor(
+                                                          Math.random() *
+                                                              genre_bg_imgs.length
+                                                      )
+                                                  ]
+                                              }
+                                          />
+                                      </div>
+                                  );
+                              })
+                            : null}
+                    </>
+                )}
             </div>
             <div className="genre_list_empty"></div>
         </div>
